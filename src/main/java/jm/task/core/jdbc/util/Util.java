@@ -8,7 +8,7 @@ public class Util {
     static final String DB_URL = "jdbc:mysql://localhost:3306/kata_hibernate";
     static final String USER = "katauser";
     static final String PWD = "kata#strong5pwd";
-    Connection connection;
+    static Connection connection;
 
     public static Connection getConnection() {
         try {
@@ -16,11 +16,11 @@ public class Util {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                connection.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+//            try {
+//                //connection.close();
+//            } catch (SQLException e) {
+//                e.printStackTrace();
+//            }
 
         }
         return connection;

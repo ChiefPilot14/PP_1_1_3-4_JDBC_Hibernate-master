@@ -29,6 +29,11 @@ public class User {
         this.age = age;
     }
 
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
     public Long getId() {
         return id;
     }

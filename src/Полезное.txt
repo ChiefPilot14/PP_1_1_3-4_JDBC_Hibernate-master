@@ -1,7 +1,0 @@
-Создал пользователя так:
-CREATE USER 'katauser'@'localhost' IDENTIFIED BY 'kata#strong5pwd';
-GRANT ALL PRIVILEGES ON *.* TO 'katauser'@'localhost';
-Создал базу так:
-CREATE SCHEMA `kata_hibernate` DEFAULT CHARACTER SET utf8 ;
-Запрос на создание таблицы:
-CREATE TABLE users ( id BIGINT NOT NULL AUTO_INCREMENT, name varchar(25), lastname varchar(25), age TINYINT, PRIMARY KEY (id) );
